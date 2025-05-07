@@ -1,0 +1,66 @@
+		===========================================
+				1. set
+		==========================================
+Properties
+------------------
+=>'set' is one of the Pre-defined class and treated as set data type.
+=>The purpose of set data type is that " To store Multiple Values either of Same Type or Different Type or 
+   Both the Types in Single Object with Unique Values (No Duplicates are allowed).
+=>The Elements of set must be stored within Curly Braces { } and the elements must be separated by 
+   comma.
+=>An object of set does not maintain Insertion Order bcoz PVM displays any possibility of set elements.
+=>On the object set, we can't perform Both Indexing and Slicing Operations bcoz set never maintains 
+    Insertion order.
+=>An object of set belongs to Both Mutable in the case of Add and immutable in the case of Item 
+   Assigment.
+=>w.r.t set , we can create Two Types of set objects. They are
+		a) Empty Set
+		b) Non-Empty Set
+----------------------------------
+a) Empty Set
+----------------------------------
+=>An Empty  Set is One, which does not contain any Elements and whose length is 0
+=>Syntax:       varname=set() 
+-------------------------------------------
+b) Non-Empty Set
+-------------------------------------------
+=>An Nn-Empty  Set is One, which contains Elements and whose length is>0
+=>Syntax1:   varname={Val1,Val2,...Val-n}
+=>Syntax2:   varname=set(object)
+======================================x===================================
+Examples
+--------------------------------------------------------------------------------------------------------------------------------
+>>> s1={10,20,30,40,10,50,60,20}
+>>> print(s1,type(s1))---------------{50, 20, 40, 10, 60, 30} <class 'set'>
+>>> print(s1,type(s1))--------------{50, 20, 40, 10, 60, 30} <class 'set'>
+>>> s2={10,"Travis",44.44,True,"Numpy"}
+>>> print(s2,type(s2))-----------{'Numpy', True, 'Travis', 10, 44.44} <class 'set'>
+----------------------
+>>> s2={10,"Travis",44.44,True,"Numpy"}
+>>> print(s2,type(s2))-----------{'Numpy', True, 'Travis', 10, 44.44} <class 'set'>
+>>> s2[0]----------------TypeError: 'set' object is not subscriptable
+>>> s2[0:3]---------------TypeError: 'set' object is not subscriptable
+----------------------------------------
+>>> s2={10,"Travis",44.44,True,"Numpy"}
+>>> print(s2,type(s2))----------{'Numpy', True, 'Travis', 10, 44.44} <class 'set'>
+>>> s2[0]=100-------------TypeError: 'set' object does not support item assignment--IMMUTABLE
+------------------------------------------------
+>>> s2={10,"Travis",44.44,True,"Numpy"}
+>>> print(s2,type(s2),id(s2))-------------{'Numpy', True, 'Travis', 10, 44.44} <class 'set'> 2485370854016
+>>> s2.add("HYD")  #  MUTABLE
+>>> print(s2,type(s2),id(s2))----{'Numpy', True, 'Travis', 10, 44.44, 'HYD'} <class 'set'> 2485370854016
+------------------------------
+>>> x={}
+>>> print(x,type(x))--------------{} <class 'dict'>
+>>> s=set()
+>>> print(s,type(s),len(s))---------- set() <class 'set'>   0
+------------------------------------
+>>> l1=[10,20,30,10]
+>>> print(l1,type(l1))-------------[10, 20, 30, 10] <class 'list'>
+>>> s1=set(l1)
+>>> print(s1,type(s1))------------{10, 20, 30} <class 'set'>
+-----------------------------------
+>>> s="MISSISSIPPI"
+>>> s1=set(s)
+>>> print(s1)-------------------{'M', 'S', 'P', 'I'}
+=======================================x===================================

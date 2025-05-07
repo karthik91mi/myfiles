@@ -1,0 +1,51 @@
+			==================================================
+						frozenset
+			==================================================
+Properties 
+----------------
+=>'frozenset' is one of the Pre-defined class and treated as set data type.
+=>The purpose of frozenset data type is that " To store Multiple Values either of Same Type or Different Type or  Both the Types in Single Object with Unique Values (No Duplicates are allowed).
+=>The Elements of frozenset set must be obtained from list,tuple and set by using a Type casting 
+    Function fronset()
+=>An object of frozenset  does not maintain Insertion Order bcoz PVM displays any possibility of frozenset elements.
+=>On the object frozenset, we can't perform Both Indexing and Slicing Operations bcoz frozenset never maintains  Insertion order.
+=>An object of frozenset belongs to  immutable in the case of Item  Assigment. and no functions are allowed to modify/ update the values of frozenset object.
+=>w.r.t frozenset , we can create Two Types of frozenset objects. They are
+		a) Empty frozenset
+		b) Non-Empty frozenset
+----------------------------------
+a) Empty frozenset
+----------------------------------
+=>An Empty  frozenset is One, which does not contain any Elements and whose length is 0
+=>Syntax:       varname=frozenset() 
+-------------------------------------------
+b) Non-Empty frozenSet
+-------------------------------------------
+=>An Nn-Empty  Set is One, which contains Elements and whose length is > 0
+=>Syntax1:   varname=frozenset( [val1,val2...val-n])
+				(OR)
+=>Syntax2:   varname=frozenset( (val1,val2...val-n) )
+				(OR)
+=>Syntax3:   varname=frozenset( {val1,val2...val-n})
+-----------------------------------------------------------------------------------------------------------------------------------------------
+NOTE:- The functionality of frozenset is exactly similar to set type but an object of set belongs to Both 
+             Mutable(in the case add() and other Functions) and Immutable (in the case of Item Assignment), where as an object of frozenset belongs to Immutable bcoz Item Assigment does not support and No Functions are allowed which are modifying the values of frozenset.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Examples:
+-------------------------------------------------------------------------------------------------------------------------------------------------
+>>> fs=frozenset()
+>>> print(fs,type(fs),len(fs))---------frozenset() <class 'frozenset'> 0
+>>> fs=frozenset([10,20,10,10,10,10])
+>>> print(fs,type(fs),len(fs))---------frozenset({10, 20}) <class 'frozenset'> 2
+>>> fs=frozenset((10,20,10,10,10,10))
+>>> print(fs,type(fs),len(fs))-------------frozenset({10, 20}) <class 'frozenset'> 2
+>>> fs=frozenset({10,20,10,10,10,10})
+>>> print(fs,type(fs),len(fs))--------------frozenset({10, 20}) <class 'frozenset'> 2
+--------------------------------------------------------
+>>> fs=frozenset([10,"Travis",45.67,True])
+>>> print(fs,type(fs))----------------frozenset({True, 10, 45.67, 'Travis'}) <class 'frozenset'>
+>>> fs[0]------------------------------------TypeError: 'frozenset' object is not subscriptable
+>>> fs[0:2]----------------------------------TypeError: 'frozenset' object is not subscriptable
+>>> fs[0]=100-----------------TypeError: 'frozenset' object does not support item assignment
+>>> fs.add(100)--------------AttributeError: 'frozenset' object has no attribute 'add'
+================================x===============================================

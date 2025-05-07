@@ -1,0 +1,18 @@
+			======================================
+					7. Robust (Strong)
+			======================================
+=>Python is one of the Robust programming lang bcoz it provides "Exception handling" facility. If the 
+    Python programmer uses Exception handling then Python Based Applications Becomes Robust.
+-----------------------------------------
+=>Definition of Exception
+-----------------------------------------
+=>All Runtime Errors are called Exception.
+=>By default, All Programming Lang, when exception occurs then we get Technical Error Messages.
+=>In Industry It is not recommended to generate technical Error Messages bcoz these messages are not understandable by End-users. 
+=>Industry is recommended to generate user-Friendly Error messages by using "Exception handling".
+---------------------------------------------------------
+=>Definition of Exception Handling
+---------------------------------------------------------
+=>The Process of Converting Technical Error Messages into user-freindly error messages is called 
+   Exception Handling.
+=========================================x========================================

@@ -1,0 +1,48 @@
+				==========================================
+					Files Or Streams in Python--5 Days
+				==========================================
+Index
+-----------------------
+=>Purpose of Files
+=>Types of Applications
+		a) Non-Persistant Appliactions
+		b) Persistant Appliactions
+=>Defition of File
+=>Definition of Streams
+=>Operations on Files
+		a) Write Operation
+		b) Read Operation
+=>Types of Files
+		a) Text Files
+		b) Binary Files
+=>File Opening Opening Modes
+		1) r   2) w   3) a
+		4) r+ 5) w+ 6) a+
+		7) x  8) x+ 
+=>Number of approaches to Open the File
+		a) By using open()
+		b) By using " with open() as "
+=>Programming Examples
+---------------------------------------------------------------------------------------------------------------
+=>Pickling (Object Serialization) and Un-Pickling(Object De-Serialization) Concept 
+=>Implementation of Pickling and Un-Pickling Operations.
+=>pickle module
+=>Programming Examples
+-----------------------------------------------------------------------------------------------------------------
+=>Working with CSV Files and Operations
+=>csv module
+=>Implementation of csv operations with csv module
+		a) csv.reader
+		b) csv.writer
+		c) csv.DictReader
+		d) csv.DictWriter
+=>Programming Examples
+-----------------------------------------------------------------------------------------------------------------
+=>Working OS Based Operations
+=>os module
+=>Implemenattion OS Based Operations with os Module
+=>Programming Examples
+=================================x=========================================
+
+
+

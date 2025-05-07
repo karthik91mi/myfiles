@@ -1,0 +1,32 @@
+		==================================================
+				numpy module--4 Days
+		==================================================
+Index
+-----------
+=>Purpose of Numpy
+=>History of numpy
+=>Setup of numpy module
+=>What is ndarray
+=>Similarities and Differences between Traditional Python List and ndarray
+=>Types of Arrays
+		a) 1-D Array
+		b) 2-D Array
+		c) n-D Array
+=>Programming Examples
+---------------------------------------------------
+=>Number of Approaches to create an object of ndarray
+=>Indexing and slicing Operations on ndarray
+=>Advanced Indexing and slicing Operations on ndarray
+=>Selecting the Elements from ndarray object (1-D,2-D, and n-d) 
+			(OR)
+    Filtering the Elements from ndarray object
+-------------------------------------------------------------------------------------
+=>Arithmetic Operation OR Matrix Operations on ndarray
+=>Stastical Operations on ndarray
+-------------------------------------------------------------------------------------
+=>Appending the elements to ndarray
+=>Inserting the elemenents into ndarray
+=>deleting the elements from ndarray
+------------------------------------------------------------------------------------
+=>Sorting the elements of ndrray
+=======================================================================

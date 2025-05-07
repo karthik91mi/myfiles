@@ -1,0 +1,34 @@
+			====================================================
+				Flow Control Statements in Python
+						(OR)
+				Control Structures in Python--Most Imp--10 days
+			=====================================================
+Index
+------------
+=>Purpose of Flow Control Statements in Python
+=>Types of Flow Control Statements in Python
+		1) Conditional OR Selection OR Branching Statements
+				a) Simple if Statements
+				b) if..else statement
+				c) if..elif..else statement
+				d) match ...case (Python 3.10 Version)
+			=>Programming Examples
+		2) Looping OR Iterative OR Repetative Statements
+				a) while loop  OR while..else loop
+				b) for loop	OR for ..else Loop
+			=>Programming Examples
+		3) Transfer Flow Control Statements
+				a) break
+				b) continue
+				c) pass
+				d) return
+			=>Programming Examples
+			=>Combined Programming Examples on Conditional, Looping and Transfer Flow Control Statements
+---------------------------------------------------------------------------------------------------------------------------------------
+=>Nested OR Inner Loops
+	a) while loop in while loop
+	b) for loop in for loop
+	c) while loop in for loop
+	d) for loop in while loop
+	=>Programming Examples
+==================================x====================================

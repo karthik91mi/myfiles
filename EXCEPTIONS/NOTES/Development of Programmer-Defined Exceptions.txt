@@ -1,0 +1,24 @@
+		==================================================
+			Development of Programmer-Defined Exceptions
+		==================================================
+=>These exceptions developed by Python Lang Programmers and Available in Python Project and Used 
+    by Other team Members of same project for dealing with Common Problems in Project.
+=>Some of the Common Problems are
+		a) Attempting to enter Invalid PIN  in ATM Application (Ex: PinError)
+		b) Attempting to withdraw more amount than existing Balance(Ex: InSufficientBal)
+		c) Attempting to Enter Invalid User Name and Password ..etc (Ex: LoginError)
+
+=>To develop 	Programmer-Defined Exception classes, we use the following Steps
+
+Step-1:   Choose the Programmer Class Name
+Step-2:  Every Programmer-Defined Class Name Must Inherit From Either Exception or BaseException 
+             and Hence Programmer-Defined Class is called Programmer-Defined  exception sub Class.
+Step-3: The Step-1 and Step-2 on some file name with an extension .py and It acts as Module Name.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Examples: class PinError(Exception):pass
+		  class InSufficientFundError(BaseException):pass
+		  class  LoginError(Exception):pass
+		  
+=>Here PinError,InSufficientFundError and LoginError are called Programmer-Defined Exception 
+   Classes.
+--------------------------------------------------------------------------------------------------------------------------------------------

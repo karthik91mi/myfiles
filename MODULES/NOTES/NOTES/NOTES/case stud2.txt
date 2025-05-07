@@ -1,0 +1,22 @@
+		
+
+		==================================
+			Operations
+		==================================
+			1. Square
+			2. Square Root
+			3. Power
+			4. Add
+			5. Sub
+			6. Mul
+			7.Exit
+		===================================
+		Enter ur Choice:
+
+
+#File System
+------------------
+->OperMenu.py------File Name--Module
+=>mathsoper.py----File Name--Module
+=>Arithoper.py---File Name --Moudle
+=>OperationsDemo.py---Main Program

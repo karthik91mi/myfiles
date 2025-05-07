@@ -1,0 +1,37 @@
+		======================================================
+				Introduction to Network Programming 
+		======================================================
+=>The purpose of Network Programming is that "To Share the data between Multiple Remote Machines which are located  across the Universe ".
+-----------------------------------------
+=>Definition of Network:
+-----------------------------------------
+=>Collection of Interconnected autonomous Computers connected with Server is called Network.
+-----------------------------------------------
+=>In Network Programming , we develop, TWO Types of applications. They are
+		1. Server Side Program
+		2. Client Side Program
+----------------------------------------------
+1. Server Side Program:
+---------------------------------------------
+=>A Server Side Program is One, which will receive The Client Side Program request, Process the Client Side Program request and gives Response back to Client Side Program.
+---------------------------------------------------------------------------------------------------
+2. Client Side Program
+---------------------------------------------
+=>A Client Side Program is One, which always makes a Request to Server Side  Program and Obtains Response from Server Side Program.
+-------------------------------------------------------------------------------------------------------------------------------------
+3. Definiton of DNS
+------------------------------------------
+=>DNS is nothing but name of the Physical Machine where Server Side Program resides
+=>The Default DNS of Every Computer is "localhost"
+-------------------------------------------------------------------------------------------------------------------------------------
+4. Definiton of IP Address
+---------------------------------------------------
+=>IP Address is is nothing but Address of the Physical Machine where Server Side Program resides
+=>The Default IP ADDress of Every Computer is "127.0.0.1" ( loop back address ).
+-------------------------------------------------------------------------------------------------------------------------------------
+5. Definiton of Port Number
+---------------------------------------------------
+=>A Port Number is Logical Numerical ID where Server Side Program Running.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+

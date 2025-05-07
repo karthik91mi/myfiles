@@ -1,0 +1,31 @@
+		==================================================
+				History of Python
+		==================================================
+=>Python Programming Lang Concevied(Foundation Stone)  in the year 1980 
+=>Python Programming Lang Implementation was began in the year 1989
+=>Python Programming Lang Officially Released in the year 1991 Feb
+=>Python Programming Lang Developed by "GUIDO VAN ROSSUM" (Father of Python)
+=>Python Programming Lang Developed at CWI (Centrum Winkunde Informatica) Institute in Nether 
+    Lands.
+=>Python Programming Lang Managed and Maintained by a Non-Commercial Organization Called 
+    "PYTHON Software Foundation (PSF) "
+=>The official website of PYTHON Software Foundation (PSF) is www.python.org
+===================================================================================
+			Versions of Python
+===================================================================================
+=>Python programming Lang Contains 3 Types of Versions. They are
+		
+		1. Python 1.x    Here  1 is called Major Version
+		                          Here x represents  0  1  2  3  4  5  6  7..etc--Minor Version
+					  Outdated
+
+			NOTE: Python 2.x does not Support Backward Compatability
+		2. Python 2.x   Here  2 is called Major Version
+		                          Here x represents  0  1  2  3  4  5  6  7--Minor Version
+					  Outdated
+			NOTE: Python 3.x does not Support Backward Compatability
+		3. Python 3.x  Here  3 is called Major Version
+		                          Here x represents  0  1  2  3  4  5  6  7 8  9--Secured  
+												10  11--Bug Fix
+												12 Future Release--Minor Version
+=================================================================================

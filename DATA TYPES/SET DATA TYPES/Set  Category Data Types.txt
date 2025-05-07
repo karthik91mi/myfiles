@@ -1,0 +1,9 @@
+		=========================================================
+			Set  Category Data Types (Collection or Data Structures)
+		=========================================================
+=>The purpose of Set  Category Data Types is that " To store Multiple Values either of Same Type or Different Type or Both the Types in Single Object with Unique Values (No Duplicates are allowed)."
+=>We have 2 data type in Set  Category. They are
+
+			1. set (mutable and immutable)
+			2. frozenset (immutable)
+================================x=============================================

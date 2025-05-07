@@ -1,0 +1,12 @@
+			=================================================
+					Types of Arguments and Parameters
+			=================================================
+=>As we Know that all the Values of arguments are passing to Parameters.
+=>Based on Passing the values of Arguments from Function to Formal Parameters of Function Definition, The arguments are classified into 5 Types. They are
+			1. Possitional Arguments.
+			2. Default Arguments
+			3. Keyword Arguments
+			4. Variables Length Arguments
+			5. Keyword Variables Length Arguments
+================================================================================
+

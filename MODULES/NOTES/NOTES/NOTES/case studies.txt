@@ -1,0 +1,91 @@
+
+Case-1
+	=================================================
+		Arithemtic Operations
+	=================================================
+		1. Addition
+		2. Substraction
+		3. Multiplications
+		4. Normal Division
+		5. Floor Division
+		6. Modulo Division
+		7. Expoentiation
+		8. Exit
+	================================================
+File System
+------------------
+1. AopMenu.py------File Name and Module Name
+2. AopImplementations.py---File Name and Module Name
+3. AopDemo.py-------Main Program
+------------------------------------------------------------------------------------------------------
+
+Case-2	
+	==================================================
+		Different Figures
+	==================================================
+		1. Circle Area
+		2. Circle Perimter
+		3. Square Area
+		4. Square Perimeter
+		5. Rectangle Area
+		6. Rectange Perimter
+		7. Triangle Area 
+		8. Triangle Perimeter(p=a+b+c)
+		9. Exit
+	==================================================
+
+File System                
+------------------		   
+Circle.py----File Name and Module Name
+	area()
+	peri()
+Square.py---File Name and Module Name
+	area()
+	peri()
+Recangle.py---File Name and Module Name
+	area()
+	peri()
+Triangle.py---File Name and Module Name
+	area()
+	peri()
+FigureMenu.py----File Name and module Name
+	menu()
+CSRT.py---Main program
+-------------------
+
+Case-3
+-------------------
+	==================================================
+		Temparature Conversions
+	==================================================
+		1. Celcious to Fahrenheit (ft=1.8*ct+32)
+		2. Fahrenheit to Celcious (ct=(ft-32)/1.8 )
+		3. Celcious to Kelvin (Kelvin = Celsius + 273.15)
+		4. Kelvin to Celcious (Celsius=Kelvin-273.15)
+		5. Fahrenheit to Kelvin(K = (F - 32) × 5 / 9 + 273.15 )
+		6. Kelvin to Fahrenheit ( F = (K – 273.15) × 9 / 5 + 32 )
+		7. Exit
+	==================================================
+File System
+-------------------
+=>TempMenu.py----File Name and Module Name
+=>CelciousTOFahrenheit.py---File Name and Module Name
+=>FahrenheitToCelcious.py---File Name and Module Name
+=>CelciousToKelvin .py-----File Name and Module Name
+=>KelvinToCelcious.py----File Name and Module Name
+=>FahrenheitToKelvin.py----File Name and Module Name
+=>KelvinToFahrenheit.py----File Name and Module Name
+=>TempCalculator.py----Main Program
+--------------------------------------------------------------------------------------------------------------------------------------
+
+		=========================================
+			Conversion Menu
+		=========================================
+			1. Years to Months
+			2. Years to Days
+			3. Months to Years
+			4. Months to days
+			5. Days to Years
+			6. Days to Months
+			7. Exit
+		===========================================

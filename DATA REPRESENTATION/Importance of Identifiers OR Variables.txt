@@ -1,0 +1,64 @@
+	=====================================================================
+					Importance of Identifiers OR Variables
+	=====================================================================
+=>We know that All types Literals are stored in main memory by having memory space.
+=>To Process values which are present in memory space , Programmers must give distinct names to cerated memory spaces. These distict names makes us to identify the values present in memory space and hence they are called IDENTIFIERS.
+=>The IDENTIFIER Values are Changing/ Varying during Program Execution and hence IDENTIFIERS are also called  VARIABLES.
+=>Hence All types of LITERALS are stored in the form of VARIABLES and all Variables are called OBJECTS.
+------------------------------
+Definition of Variable:
+-------------------------------
+=>A Variable is an Identifier whose values are Changing During Program Execution.
+==============================================================================
+	Rules for using Variables / Identifiers in Python Programming
+==============================================================================
+=>To use Variables in Python Programming, Python Programmer must use the following
+
+RULE-1:  The Variable Name is a combination of Alphabets, Digits and Special Symbol Under score ( _ )
+-----------   only
+
+RULE-2:  The First Letter of Variable Must starts Either with Alphabet or Under Score ( _ )
+------------
+		Examples:
+		---------------		
+				sal=34----valid
+				123sal=56--Invalid
+				$sal=45---invalid
+				sal1=34----valid
+				_sal_=46--valid
+				__a=56--valid
+				__=56--valid
+-------------
+RULE-3:       Within the Variable Name, Special Symbols are not allowed except Under score( _ )
+------------
+		Examples:
+		---------------
+					emp  sal=56---invalid
+					emp$sal=56--Invalid
+					emp-sal=45--invalid
+					emp_sal=56--valid
+					emp_sal$ibm=67--invalid
+					emp_sal_ibm=67--valid
+---------------
+RULE-4:      We should not Keywords as Variables Names bcoz Keywords are reserved words and they 
+---------------Contains Some Special meaning to the Lang Compilers.
+
+		Examples:
+		---------------
+				if=56--Invalid
+				else=67--Invalid
+				for=56--Invalid 
+				if1=56---valid
+				_else=56--valid
+				_for=67--valid
+------------
+RULE-5  :   All the Variable Names are Case Sensitive
+------------			
+		Examples:
+		-----------------
+			 AGE=45
+			 age=99
+			 Age=97
+			aGe=96
+			print(AGE,age,Age,aGe)-----------------45 99 97 96
+=============================================================================

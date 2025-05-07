@@ -1,0 +1,14 @@
+			========================================
+				What is Literal--Types of Literals
+			========================================
+=>Literals are nothing but input values passing as Input to the Program.
+=>In otherwords, The values passing to the program as an input are called Literals.
+=>In Python Programming, Primaraly, we have 5 types of Literals. They are
+
+		1. Integer Literals / Values
+		2. Floating point Literals
+		3. String Literals
+		4. Boolean Literals
+		5. Collection Literals
+=====================================================================
+

@@ -1,0 +1,31 @@
+		=================================================
+				Types of Errors 
+		=================================================
+=>The purpose of Exception Handling is that " To Build  Robust (Strong) Applications ".
+=>In real time, to develop any type of application, we need to choose a language.
+=>By using the language, we can develop, compile and execute various Programs. During this Process, 
+    we get Various types of Errors. They are classified into 3 types. They are
+			1. Compile Time Errors.
+			2. Logical Errors.
+			3. Runtime Errors.
+------------------------------------------------------------------------------------------------------------------------------------------------
+1. Compile Time Errors
+------------------------------------------------------------------------------------------------------------------------------------------------
+=>Compile Time Errors are those which are occuring during Compilation Process (.py---->.pyc).
+=>Compile Time Errors occurs due to Programmer not following Syntaxes of the Lang.
+=>Compile Time Errors Solved by Programmers during development time.
+------------------------------------------------------------------------------------------------------------------------------------------------
+2. Logical Time Errors
+------------------------------------------------------------------------------------------------------------------------------------------------
+=>Logical Errors are those which are occuring during Execution Time (.pyc---->PVM).
+=>Logical Errors occurs due to Wrong Representation / Invalid Logics of Problem
+=>Logical Errors always Wrong Results
+=>Logical Errors Solved by Programmers during development time.
+------------------------------------------------------------------------------------------------------------------------------------------------
+3. Runtime Errors ( Implementation Errors)
+------------------------------------------------------------------------------------------------------------------------------------------------
+=>Runtime Errors are those which are occuring during Execution / Runtime Time.
+=>Runtime Errors occurs due to Wrong OR  Invalid Inputs Entered by End-User OR Application User.
+=>By default Runtime Errors always generates Technical Error Messages, which are understandable by 
+   Programmers but not by end-users. So Industry Recommeded to Convert Technical Error Messages into User-Freindly Error Messages by using Exception Handling.
+=================================================================================

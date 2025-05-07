@@ -1,0 +1,15 @@
+			======================================
+				9  Extensible  and  10 Embedded 
+			======================================
+Extensible:
+------------------
+=>A programming is lang is said to be "Extensible" iff It provides Programming Faclities 
+    to other languages
+=>Example: Python Programming Provides its Programming Facilities to C,C+,Java..etc 
+    and hence Python is one of the Extensible Programming Lang.
+----------------------
+Embedded:
+----------------------
+=>A programming Lang is said to be Embedded iff It takes the Programming Services of Other languaes.
+=>For Example: Python Programming Embedded the Programming Services of C bcoz C is the Fastest Programming Lang.
+=================================x===================================

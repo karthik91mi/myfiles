@@ -1,0 +1,67 @@
+		======================================================
+			Module Name for Developing  Client-Server Applications
+		======================================================
+=>The Module Name for Developing  Client-Server Applications is "socket".
+---------------------------------------------------------------------------------------------------------------------------
+Function in socket module
+---------------------------------------------------------------------------------------------------------------------------
+1) socket():
+-----------------
+Syntax:      varname=socket.socket()
+=>This function isused for cerating an object socket.
+=>here varname is an object of Socket Class
+=>If we create an object of socket in Server Side Program then we call it as ServerSocket
+=>If we create an object of socket in Client Side Program then we call it as ClientSocket
+=>An object of socket acts as Bi-Directional Communication Object bcoz It resides at both Client and server 
+   side programs.
+Examples:     s=socket.socket()
+-----------------------------------------------------------------------------------------------------------------------------------------
+2. bind()
+--------------
+Syntax:    serversocketobj.bind( ("DNS/IPAddress",Portno) )
+=>This Function is used for binding socket object as Server Socket at Certain DNS OR IPAddress and Portno 
+    and It is called Server Side Program.
+=>Examples:   s.bind(("localhost",8888))
+-----------------------------------------------------------------------------------------------------------------------------------------
+3. listen()
+------------------
+=>Syntax:    serversockobj.listen(No. of Clients)
+=>This Function is used for Configuring the Server Side Program in such way that to how many clients Server 
+    Side program can communicate.
+=>Examples:   s.listen(2)
+-----------------------------------------------------------------------------------------------------------------------------------------
+4. accept()
+---------------------
+=>Syntax:      ClientSockObj,ClientSockAddr=serversockobj.accept()
+=>This Function is used for Accepting the Client Side Program request and This Function returns and object of 
+   socket created as Client Side and Its Address.
+=>Examples:          cs,ca=s.accept()
+=>here 'cs' is an obejct of Client Socket and It contains Client Side Program Data.
+-----------------------------------------------------------------------------------------------------------------------------------------
+5. recv()
+---------------------
+=>Syntax:      varname=clientsocket.recv(1024 | 2048 |4096)
+			strdata=varname.decode()
+				(OR
+=>Syntax:      strdata=clientsocket.recv(1024 | 2048 |4096).decode()
+	
+=>This function is used for Receving the Request of Client Side Program at Server Side Program and also used 
+    at Client Side program for Receving the Response from Server Side Program and this Function returns an object of <class,bytes> and convert into str data by using decode() present in bytes class object
+Examples:    strdata=clientsocket.recv(1024 | 2048 |4096).decode()
+-----------------------------------------------------------------------------------------------------------------------------------------
+6. send()
+---------------------
+=>Syntax:	clientsocket.send(strdata.encode())
+=>strdata.encode() is converting Str Data into an object of bytes type and encode() present in str object.
+=>send() is used for sending Request of Client Side Program to Server Side Program and It can also be used at 
+    Server Side Program for Sending the Response to Client Side program.
+=>Examples:    clientsocketobj.send( str(100).encode() )
+---------------------------------------------------------------------------------------------------------------------------------------------
+7. connect()
+---------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:  clientsocketobj.connect(("DNS/IPAddress",portno))
+=>This Function is used for Obtaining the connection from Server Side Program by the Client Side Program.
+Examples:    clientsocketobj.connect(("localhost",8888))
+					(OR)
+Examples:    clientsocketobj.connect(("127.0.0.1",8888))
+---------------------------------------------------------------------------------------------------------------------------------------------

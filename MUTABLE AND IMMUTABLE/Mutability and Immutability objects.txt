@@ -1,0 +1,22 @@
+		====================================================
+					Mutability and Immutability objects
+		====================================================	
+--------------------------------
+Mutable Object
+--------------------------------
+=>A Mutbale object is one, Which allows us to Perform the Changes / Modify / Update the values at 
+    Same Memory  Address
+-----------------
+Examples:
+-----------------
+=>bytearray,list,set,dict
+--------------------------------
+Immutable Object
+--------------------------------
+=>An Immutbale object is one, which will satisfy the following properties. 
+		a) The value of Immutable object never allows us to Modify at same address 
+		     ( OR Value of Immutable object can be modified and Modified value can be placed at New Memory Address)
+		b) Immutable objects does not support Item Assigment 
+
+Examples:   int, float, complex, bool, str, bytes, range,tuple,set,frozenset
+===========================================================================

@@ -1,0 +1,13 @@
+			============================================
+				Types of Parameters and Arguments
+			============================================
+=>The relationship between Argruments and Parameters is that all the Values of arguments are passing to Parameters. This Mechanism is called Arguments Passing Mechanism.
+=>We have 5 types of Arguments Passing Mechanism. They are
+
+			a) Possitional Arguments
+			b) Default Arguments
+			c) Keyword Arguments
+			d) Variable Length Arguments
+			e) Keyword Variable Length Arguments
+
+==================================x========================================

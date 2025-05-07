@@ -1,0 +1,49 @@
+			========================================================
+				Number of approaches for developing Python Programs
+			========================================================
+---------------------------
+=>Def. of Program:
+---------------------------
+=>Set of Optimized Instructions  is Called Program.
+=>Optimized Instructions are nothing but they takes Less Memory Space and Less Execution Time.
+=>The Purpose of Writing Programs in any Language is that " To Solve Real Time Problems".
+-----------------------------
+=>In Python Programming, we have Two Approaches to write the Programs. They are
+		1. By using Interactive Approach
+		2. By using Batch Mode Approach
+--------------------------------------------------------------------------------------------------------------------------------
+1. By using Interactive Approach
+--------------------------------------------------------------------------------------------------------------------------------
+=>Interactive Approach, Python Programmer can Issue / Write Single Instruction at a time and gets the 
+   result Immediately.
+=>Interactive Approach is recommended to  test One Instruction at a Time But Not suitable for Big 
+    Problem Solving approaches.
+=>To Develop Big  Problem Solving approaches, we must use Batch Mode Approach
+------------------------------
+Examples Softwares:		
+------------------------------
+					1) Python Command Prompt
+					2) Python IDLE Shell
+
+=>The above Two Softwares Comes along with Python Software Installation
+--------------------------------------------------------------------------------------------------------------------------------
+2. By using Batch Mode Approach
+--------------------------------------------------------------------------------------------------------------------------------
+=>In Batch Mode Approach, we Define / Write set of Optmized Instructions in an Editor and we must save on some File name with extension .py (FileName.py) and It is called Program.
+=>Batch Mode Approach is always Useful for Developing Big  Problem Solving approaches.
+---------------------------------
+Examples Softwares  
+---------------------------------		
+			1) Python IDLE Shell---->ThisSoftwares Comes along with Python Software Installation
+=>In Real Time we may not Use PYTHON IDLE SHELL bcoz It may be poor in Providing in-buitlt facilities 
+    to the Python Programmer and Hence Industry is recommeded to use Third Party IDES
+=>Some of the Third Party IDEs are
+				1) PyCharm
+				2) Ankonda Jupiter Note Book
+				3) VS Code
+				4) Spider
+				5) Sublime Text
+				6) Atom
+				7) Google Calb
+				8)  Eclipse...etc
+--------------------------------------------------------------------------------------------------------------------------------

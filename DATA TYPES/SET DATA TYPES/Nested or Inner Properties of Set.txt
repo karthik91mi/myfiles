@@ -1,0 +1,24 @@
+		==============================================
+				Nested or Inner Properties of Set
+		===============================================
+=>We can define 
+
+	a)  Defining set inside of another set  NOT POSSIBLE 
+	b)  Defining set inside of another Tuple  POSSIBLE
+	c)  Defining set inside of another List POSSIBLE
+	d)  Defining tuple inside of Another Set POSSIBLE 
+	e) Defining  list inside of another set NOT POSSIBLE
+
+----------------------
+Examples:
+----------------------
+>>> s1={10,"Rossum",{10,15,16},"OUCET"}-----TypeError: unhashable type: 'set'
+>>> s1={10,"Rossum",[10,15,16],"OUCET"}----TypeError: unhashable type: 'list'
+>>> s1={10,"Rossum",(10,15,16),"OUCET"}-----Valid
+>>> print(s1,type(s1))----{'Rossum', 10, 'OUCET', (10, 15, 16)} <class 'set'>
+--------------------
+>>> t1=(10,"Rossum",{10,15,16},"OUCET")
+>>> print(t1[2],type(t1[2]),type(t1))----{16, 10, 15} <class 'set'> <class 'tuple'>
+>>> l1=[10,"Rossum",{10,15,16},"OUCET"]
+>>> print(l1[2],type(l1[2]),type(l1))----{16, 10, 15} <class 'set'> <class 'list'>
+====================================x=========================================

@@ -1,0 +1,81 @@
+		===============================================
+					Inner or Nested List
+		===============================================
+=>The Process of Defining one list inside of another list is called Inner or Nested List
+=>Syntax:-  listobj=[ Val1, Val2....[Val11,Val12...Val1n], [Val21,Val22..Val2n...], Val-n ]
+
+
+=>Here Val1,Val2...Val-n are called Values of Outer List
+=>Here Val11,Val12...Val-1n are called Values of one Inner List
+=>Here Val21,Val22...Val-2n are called Values of another Inner List
+=>In inner list we can perform Both Indexing and Slicing Operations
+=>On Inner List, we can apply all pre-defined function of list.
+
+Examples:
+---------------------------
+>>> lst=[100,"Karthik",[18,16,20],[76,75,66],"OUCET"]
+>>> print(lst)-----------------[100, 'Karthik', [18, 16, 20], [76, 75, 66], 'OUCET']
+>>> lst[-1]--------------------'OUCET'
+>>> lst[-2]------------------------[76, 75, 66]
+>>> lst[-3]--------------------------[18, 16, 20]
+>>> lst[1]-----------------------------------'Karthik'
+>>> lst[0]-----------------------------------100
+>>> print(lst[2],type(lst[2]))----------------[18, 16, 20] <class 'list'>
+>>> print(lst[-2],type(lst[-2]))-------------[76, 75, 66] <class 'list'>
+>>> lst[2][0]------------------------------18
+>>> lst[2][1]------------------------------16
+>>> lst[2][1]=17
+>>> print(lst)-----------------[100, 'Karthik', [18, 17, 20], [76, 75, 66], 'OUCET']
+>>> lst[2].append(16)
+>>> print(lst)---------------[100, 'Karthik', [18, 17, 20, 16], [76, 75, 66], 'OUCET']
+>>> lst[-2].insert(-2,80)
+>>> print(lst)--------------[100, 'Karthik', [18, 17, 20, 16], [76, 80, 75, 66], 'OUCET']
+>>> del lst[-2]
+>>> print(lst)--------------[100, 'Karthik', [18, 17, 20, 16], 'OUCET']
+>>> lst[2].clear()
+>>> print(lst)----------------[100, 'Karthik', [], 'OUCET']
+>>> del lst[2]
+>>> print(lst)---------------------[100, 'Karthik', 'OUCET']
+>>> lst.insert(2,[16,15,18,17])
+>>> print(lst)--------------------------[100, 'Karthik', [16, 15, 18, 17], 'OUCET']
+>>> lst.insert(-1,[77,66,78,55])
+>>> print(lst)-----------------[100, 'Karthik', [16, 15, 18, 17], [77, 66, 78, 55], 'OUCET']
+>>> lst[2].sort()
+>>> print(lst)-------------------[100, 'Karthik', [15, 16, 17, 18], [77, 66, 78, 55], 'OUCET']
+>>> lst[-2].sort(reverse=True)
+>>> print(lst)--------------------[100, 'Karthik', [15, 16, 17, 18], [78, 77, 66, 55], 'OUCET']
+------------------
+Examples:
+------------------
+>>> studlist=[100,"DLPrince",[18,16,19],[78,66,79],"OUCET"]
+
+>>> print(studlist,type(studlist))--[100, 'DLPrince', [18, 16, 19], [78, 66, 79], 'OUCET']									<class 'list'>
+>>> print(studlist[2],type(studlist[2]))---[18, 16, 19] <class 'list'>
+>>> print(studlist[-2],type(studlist[-2]))---[78, 66, 79] <class 'list'>
+>>> studlist[-3].append(17)
+>>> print(studlist,type(studlist))--[100, 'DLPrince', [18, 16, 19, 17], [78, 66, 79],									'OUCET'] <class 'list'>
+>>> studlist[3].append(68)
+>>> print(studlist,type(studlist))---[100, 'DLPrince', [18, 16, 19, 17], [78, 66, 79, 68],									'OUCET'] <class 'list'>
+>>> studlist[2].sort()
+>>> print(studlist,type(studlist))---[100, 'DLPrince', [16, 17, 18, 19], [78, 66, 79, 68],									'OUCET'] <class 'list'>
+>>> studlist[3].sort(reverse=True)
+>>> print(studlist,type(studlist))----[100, 'DLPrince', [16, 17, 18, 19], [79, 78, 68, 66],									'OUCET'] <class 'list'>
+>>> studlist[2].pop(-2)----18
+>>> studlist[-2].remove(68)
+>>> print(studlist,type(studlist))--[100, 'DLPrince', [16, 17, 19], [79, 78, 66], 'OUCET']								<class 'list'>
+>>> studlist[2].clear()
+>>> print(studlist,type(studlist))--[100, 'DLPrince', [], [79, 78, 66], 'OUCET'] <class									'list'>
+>>> studlist[2].append(14)
+>>> print(studlist,type(studlist))---[100, 'DLPrince', [14], [79, 78, 66], 'OUCET'] <class									'list'>
+>>> del studlist[2]
+>>> del studlist[-2]
+>>> print(studlist,type(studlist))---[100, 'DLPrince', 'OUCET'] <class 'list'>
+>>> studlist.insert(2,[17,15,14,19])
+>>> print(studlist,type(studlist))--[100, 'DLPrince', [17, 15, 14, 19], 'OUCET'] <class									'list'>
+>>> studlist.append([66,78,65,76])
+>>> print(studlist,type(studlist))---[100, 'DLPrince', [17, 15, 14, 19], 'OUCET', [66, 78,									65, 76]] <class 'list'>
+>>> studlist[-2]---'OUCET'
+>>> len(studlist)----5
+>>> len(studlist[2])---4
+>>> len(studlist[-1])---4
+===================x==================================

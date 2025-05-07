@@ -1,0 +1,28 @@
+			=======================================
+				Types of Exceptions in Python
+			=======================================
+=>In Python Programming, we have two types of exceptions. They are
+
+		1. Pre-Defined OR Built-in Exceptions
+		2. Programmer OR User OR Custom Defined Exceptions
+-------------------------------------------------------------------------------------------------------------------------------------------------
+1. Pre-Defined OR Built-in Exceptions
+-------------------------------------------------------------------------------------------------------------------------------------------------
+=>These exceptions are developed by Python Lang Developers and Available in Python Software and Used by Python Lang Programmers for Dealing with Universal Problem.
+=>Some of the Universal Probelms are.
+
+	a) Invalid number format ( ValueError)
+	b) Invalid Attribute Names (AttributeError)
+	c) Invalid Key (KeyError)
+	d) module does not exist ( ModuleNotFoundError)
+	e) wrong index (IndexError)..etc
+-------------------------------------------------------------------------------------------------------------------------------------------------
+2. Programmer OR User OR Custom Defined Excetpions
+-------------------------------------------------------------------------------------------------------------------------------------------------
+=>These exceptions developed by Python Lang Programmers and Available in Python Project and Used by Other team Members of same project for dealing with Common Problems in Project
+
+=>Some of the Common Problems are
+		a) Attempting to enter Invalid PIN  in ATM Application
+		b) Attempting to withdraw more amount than existing Balance.
+		c) Attempting to Enter Invalid User Name and Password ..etc
+================================x==================================================

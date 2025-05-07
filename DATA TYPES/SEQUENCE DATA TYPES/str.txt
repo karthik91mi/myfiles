@@ -1,0 +1,124 @@
+			=================================================
+							1. str ( Part-1 )
+			=================================================
+iNDEX
+-----------
+=>Purpose of str
+=>Definition of str
+=>Types of strs
+=>Notation used for storing str data
+=>Memory Management of str data
+=>Operations on str Data
+		a) Indexing
+		b) Slicing
+=>Programmin Examples
+----------------------------------------------------------------------------------------------------------------------------------------
+Properties
+----------------------------
+=>'str' is one of the pre-defined class and treated as Sequence Data Type.
+=>The purpose of str data type is that "To store String data or text data or Alphanumeric data or numeric data or special symbols  within double Quotes or single quotes or tripple double quotes and tripple single quotes. "
+------------------------
+=>Def. of str:
+-----------------------
+=>str is a collection of Characters or  Alphanumeric data or numeric data or any type of data enclosed within double Quotes or single quotes or tripple double quotes and tripple single quotes. "
+----------------------------
+Types of Str data
+-----------------------------
+=>In Python Programming, we have two types of Str Data. They are
+		1. Single Line String Data
+		2. Multi Line String Data
+-----------------------------------------
+1. Single Line String Data:
+-----------------------------------------
+=>Syntax1:-       varname=" Single Line String Data "
+						(OR)
+=>Syntax2:-       varname=' Single Line String Data '
+=>With the help double Quotes ("  ") and single Quotes (' ') we can store single line str data only but not possible to store multi line string data.
+---------------------------------------------------------------------------------------------------------------------
+2. Multi Line String Data:
+-----------------------------------------
+=>Syntax1:-       varname=" " " String Data1 
+						   String Data2
+						   ------------------
+						   String data-n " " "
+
+						     (OR)
+
+=>Syntax2:-      varname=' ' ' String Data1 
+						   String Data2
+						   ------------------
+						   String data-n ' ' '
+
+=>With the help OF  tripple double Quotes (" " "     " " ") and Tripple single Quotes (' ' '    ' ' ') we can store single line str data and multi line string data.
+------------------------------------------------------------------------------------------------------------------------------------------
+Examples:
+--------------------------------------------------------------------------------------------------------------------------------------
+>>> s1="Python"
+>>> print(s1,type(s1))--------------Python <class 'str'>
+>>> s2='Python'
+>>> print(s2,type(s2))-------------Python <class 'str'>
+>>> s3='A'
+>>> print(s3,type(s3))-----------A <class 'str'>
+>>> s4="A"
+>>> print(s4,type(s4))--------------A <class 'str'>
+------------------------------
+>>> s5="Python3.10"
+>>> print(s5,type(s5))--------------Python3.10 <class 'str'>
+>>> s6="123456"
+>>> print(s6,type(s6))----------123456 <class 'str'>
+>>> s7="Python Programming 1234$Rossum_Guido"
+>>> print(s7,type(s7))----------Python Programming 1234$Rossum_Guido <class 'str'>
+---------------------------
+>>> addr1= "Guido van Rossum
+                    ------------------------------
+				SyntaxError: unterminated string literal (detected at line 1)
+>>> addr1= ' Guido van Rossum
+		    -----------------------------
+				SyntaxError: unterminated string literal (detected at line 1)
+-------------------------------------
+>>> addr1=" " "Guido van Rossum
+... HNO:3-4,Hill Side
+... Python Software Foundation
+... Nether Lands-56"""
+>>> print(addr1,type(addr1))
+			Guido van Rossum
+			HNO:3-4,Hill Side
+			Python Software Foundation
+			Nether Lands-56 <class 'str'>
+-------------------
+>>> addr2=' ' 'Travis Oliphant
+... HNO:23-45, Sea Side
+... Numpy Organization
+... nethr lands-67 '''
+>>> print(addr2,type(addr2))
+			Travis Oliphant
+			HNO:23-45, Sea Side
+			Numpy Organization
+			nethr lands-67  <class 'str'>
+------------------------------------------
+>>> s7=" " " Python " " "
+>>> print(s7,type(s7))--------------Python <class 'str'>
+>>> s8=' ' ' Python ' ' '
+>>> print(s8,type(s8))-----------------Python <class 'str'>
+>>> s9=" " " Z " " "
+>>> print(s9,type(s9))-------------Z <class 'str'>
+>>> s10=' ' ' K ' ' '
+>>> print(s10,type(s10))------------K <class 'str'>
+------------------------
+>>> s1="Python Programmin"
+>>> print(s1,type(s1))--------------------Python Programmin <class 'str'>
+>>> s1---------------------------------------  ' Python Programmin '
+>>> s7=" " " Python " " "
+>>> print(s7,type(s7))------------------Python <class 'str'>
+>>> s7-------------------------------------- ' Python '
+-------------------------------
+>>> s1=" " "Python is an oop lang
+... python is also fun Prog lang
+... Python is also Modular Prog lang " " "
+>>> print(s1,type(s1))
+			Python is an oop lang
+			python is also fun Prog lang
+			Python is also Modular Prog lang <class 'str'>
+>>> s1
+		' Python is an oop lang \n python is also fun Prog lang \n Python is also Modular Prog lang '
+=================================x======================================

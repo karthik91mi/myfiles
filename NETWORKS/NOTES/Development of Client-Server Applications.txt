@@ -1,0 +1,27 @@
+		======================================================
+				Development of Client-Server Applications
+		======================================================
+---------------------------------------------------------------------
+Steps for Developing Server Side Program
+---------------------------------------------------------------------
+Step-1: import sokcket
+Step-2: Every Server Side Program Create an object of socket  and BINDS with Certain Machine(DNS/IPAddress) 
+             and Port Number
+Step-3: Every Server Side must be Configured in such way that to how many clients Server Side program can 
+             communicate.
+Step-4: Every Server Side program must ACCEPT the Client Side Program Request.
+Step-5: Every Server Side program must Read Client Side  Program Request and PROCESS.
+Step-6: Every Server Side program must give RESPONSE to Client Side Program
+Step-7: Every Server Side program must Repeat Step-4,Step-5 and Step-6 until all Client Side Program requests 
+            Completed.
+---------------------------------------------------------------------
+Steps for Developing Client Side Program
+---------------------------------------------------------------------
+Step-1:  import sokcket
+Step-2:  Every Client Side Program Creates an object of socket and CONNECT (DNS/IPAddress,porno) to Server 
+             Side Program
+Step-3: Every Client Side Program must Send the Request to Server Side Program.
+Step-4: Every Client Side Program must Receive the Response from Server Side Program.
+Step-5: Every Client Side Program must  Step-4 and Step-5 until all Client Side Program requests 
+            Completed.
+======================================x================================================

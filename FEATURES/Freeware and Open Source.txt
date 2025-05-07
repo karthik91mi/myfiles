@@ -1,0 +1,24 @@
+			===========================================
+				2. Freeware and Open Source
+			===========================================
+Freeware:
+----------------
+=>If any software downloaded Freely and that Software comes under Freeware
+
+Examples:    Python, Java-----
+---------------------
+Open Source:
+----------------------
+=>The standard Name of Python Software is "CPYTHON".
+=>Many Software companies came  forward and Customized CPYTHON and developed their own 
+   in-house tools.
+=>The Customized Versions of CPYTHON are called "Python Distributions".
+=>Some of the Python Distributions are. 
+
+	1. JPython  OR Jython----->Used for Running Java Based Applications
+	2 Iron Python OR IPython--->used to run C#.net Applications
+	3. Ruby Python ------>Used to Run Ruby Applications
+	4. Micro Python----->Used to run / develop Micro Controller Applications
+	5. Ankonda Python---->used to Run  Big data / Hadoop Based Applications
+	5. StackLess Python--->Used for Concurrency Applications...etc
+

@@ -1,0 +1,18 @@
+		====================================================
+			Modules in Python--2 days
+		====================================================
+Index
+----------------------------------
+=>Purpose of Modules
+=>Definition of Module
+=>Types of Modules
+=>Steps for development of Programmer-Defined Modules
+=>Number of approaches to Re-Use Modules
+		a) By using import statement
+		b) By using from ... import statement
+=>Programming Examples
+-------------------------------------------------------------------------------
+=>Re-Lodaing Mdules
+=>Programming Examples
+=>Case Study Implementations.
+-------------------------------------------------------------------------------

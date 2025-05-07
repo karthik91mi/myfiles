@@ -1,0 +1,20 @@
+			=================================================
+					Modules in Python---2 days
+			=================================================
+Index
+-------------
+=>Purpose of Modules
+=>Definition of Module
+=>Types of Modules
+		a) Pre-Defined Modules
+		b) Programmer / User / Custom-Defined Modules
+=>Development of Programmer / User / Custom-Defined Modules
+=>Number of approaches to Re-Use the features of Modules
+		a) by using import statement
+		b) By using from..import statement.
+=>Programming Examples
+--------------------------------------------------------------------------------------------------------------------
+=>Re-Loading Modules
+=>imp / importlib Modules
+=>Programming Examples
+----------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,460 @@
+		=========================================================
+				Pre-Defined functions in dict
+		=========================================================
+=>In dict object, we have the following function for performing Various Operations.
+----------------------------------------------------------------------------------------------------------------------------------
+1. clear()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:  dictobj.clear()
+=>This Function is used for Removing all the elements of non-empty dict object
+=>If we call this function upon empty dict object then we get None / No Output.
+----------------
+Examples
+----------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,type(d1),id(d1))---{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} <class 'dict'> 2364664861568
+>>> d1.clear()
+>>> print(d1,type(d1),id(d1))----{} <class 'dict'> 2364664861568
+>>> print(d1.clear())----------None
+>>> print(dict().clear())---------None
+>>> print({}.clear())--------------None
+----------------------------------------------------------------------------------------------------------------------------------
+2. pop()
+----------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:   dictobj.pop(Key)
+---------------
+=>This Function is used for Removing (Key,value) from non-empty dictobject by passing Value of Key.
+=>If the Value of Key does not exist then we get KeyError
+=>If we call this pop(), upon empty dict object then we get KeyError.
+----------------
+Examples:
+----------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))---------------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669155776
+>>> d1.pop(20)--------------------'Java'
+>>> print(d1,id(d1))--------------{10: 'Python', 30: 'C++', 40: 'C'} 2364669155776
+>>> d1.pop(30)------------------'C++'
+>>> d1.pop(40)0---------------'C'
+>>> print(d1,id(d1))--------------{10: 'Python'} 2364669155776
+>>> d1.pop(50)------------------------KeyError: 50
+>>> print(d1,id(d1))--------{10: 'Python'} 2364669155776
+>>> d1.pop(10)-------------'Python'
+>>> print(d1,id(d1))--------{} 2364669155776
+>>> d1.pop(10)-----------KeyError: 10
+>>> dict().pop(10)----------------KeyError: 10
+>>> {}.pop("Python")-----KeyError: 'Python'
+----------------------------------------------------------------------------------------------------------------------------------
+3. popitem()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:   dictobj.popitem()
+------------
+=>This Function is used for Removing Last (Key,value) entry  from non-empty dictobject.
+=>If we call this popitem(), upon empty dict object then we get KeyError.
+Examples:
+---------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))-------------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669156096
+>>> d1.popitem()---------------(40, 'C')
+>>> print(d1,id(d1))------------{10: 'Python', 20: 'Java', 30: 'C++'} 2364669156096
+>>> d1.popitem()--------------(30, 'C++')
+>>> print(d1,id(d1))----------{10: 'Python', 20: 'Java'} 2364669156096
+>>> d1.popitem()-----------(20, 'Java')
+>>> print(d1,id(d1))-------------{10: 'Python'} 2364669156096
+>>> d1.popitem()-------------(10, 'Python')
+>>> print(d1,id(d1))--------------{} 2364669156096
+>>> d1.popitem()-----------KeyError: 'popitem(): dictionary is empty'
+>>> dict().popitem()----------KeyError: 'popitem(): dictionary is empty'
+>>> {}.popitem()-----------KeyError: 'popitem(): dictionary is empty'
+----------------------------------------------------------------------------------------------------------------------------------
+4. copy()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:   dictobj2=dictobj1.copy()
+------------
+=>This function is used for Copying the content of One dict object into another dict object.
+------------------
+Examples:
+------------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))---------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669156416
+>>> d2=d1.copy()  # Shallow Copy
+>>> print(d2,id(d2))----{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669156096
+>>> d1[50]="Dsc"
+>>> d2[60]="Django"
+>>> print(d1,id(d1))----{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C', 50: 'Dsc'} 2364669156416
+>>> print(d2,id(d2))---{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C', 60: 'Django'} 2364669156096
+----------------
+Deep Copy Process of dict objects
+---------------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))---------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669155776
+>>> d2=d1 # Deep Coy
+>>> print(d2,id(d2))---------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669155776
+>>> d1[50]="Dsc"
+>>> print(d1,id(d1))---------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C', 50: 'Dsc'} 2364669155776
+>>> print(d2,id(d2))---------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C', 50: 'Dsc'} 2364669155776
+----------------------------------------------------------------------------------------------------------------------------------
+5. get()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:     This Function is used for obtaining Value of Value by Passing Value of Key.
+-----------
+=>if the value of Key does not exist then we get None as a result 
+				(OR)
+Syntax:     dictobj[Key]---->Will give Value of Value if Key Present otherwise get KeyError	
+----------------
+Examples:
+----------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))-------------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669156096
+>>> v=d1.get(10)
+>>> print(v)------------Python
+>>> v=d1.get(20)
+>>> print(v)-----------Java
+	#OR
+>>> d1.get(10)--------'Python'
+>>> d1.get(20)--------'Java'
+>>> print(d1.get(200))-------None
+>>> v=d1.get(200)
+>>> print(v)--------------None
+>>> print(dict().get(10))---------None
+>>> print({}.get(10))------------None
+-------------------------OR----------------------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))-----------------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669156288
+>>> d1.get(10)--------------'Python'
+	
+>>> d1[10]--------------------'Python'
+>>> d1[20]---------------------'Java'
+>>> d1[40]--------------------'C'
+>>> d1[400]-------------------KeyError: 400
+>>> print(d1.get(400))--------None
+----------------------------------------------------------------------------------------------------------------------------------
+6. keys()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:   varname=dictobj.keys()
+------------			(OR)
+				dictobj.keys()
+
+=>This Function is used for obtaining set of Keys in the form of dict_keys object.
+---------------
+Examples:
+-----------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))----------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669156096
+>>> ks=d1.keys()
+>>> print(ks,type(ks))---------dict_keys([10, 20, 30, 40]) <class 'dict_keys'>
+>>> for k in ks:
+...		print(k)
+...
+		10
+		20
+		30
+		40
+>>> for k in d1.keys():
+...		print(k)
+...
+			10
+			20
+			30
+			40
+>>> for k in d1.keys():
+...     print(k,"-->",d1.get(k))
+...
+		10 --> Python
+		20 --> Java
+		30 --> C++
+		40 --> C
+>>> for k in d1.keys():
+...     print(k,"-->",d1[k])
+...
+		10 --> Python
+		20 --> Java
+		30 --> C++
+		40 --> C
+----------------------------------------------------------------------------------------------------------------------------------
+7. values()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:   varname=dictobj.values()
+------------			(OR)
+				dictobj.values()
+
+=>This Function is used for obtaining set of Values in the form of dict_values object.
+------------------
+Examples
+------------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> print(d1,id(d1))---------{10: 'Python', 20: 'Java', 30: 'C++', 40: 'C'} 2364669156288
+>>> vs=d1.values()
+>>> print(vs)---------dict_values(['Python', 'Java', 'C++', 'C'])
+>>> for v in vs:
+...     print(v)
+...
+		Python
+		Java
+		C++
+		C
+>>> for v in d1.values():
+...     print(v)
+...
+		Python
+		Java
+		C++
+		C
+---------------------------------
+MOST IMP
+---------------------------------
+>>> for x in d1:
+...		print(x)
+...
+			10
+			20
+			30
+			40
+
+>>> for x in d1:
+...		print(x,"-->",d1[x])
+...
+			10 --> Python
+			20 --> Java
+			30 --> C++
+			40 --> C
+----------------------------------------------------------------------------------------------------------------------------------
+8. items()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:  varname=d1.items()
+------------
+This Function is used for obtaining (Key,value) in the form of tuples of list in the object of dict_items.
+------------------
+Examples:
+-----------------
+>>> d1={10:"Python",20:"Java",30:"C++",40:"C"}
+>>> kvs=d1.items()
+>>> print(kvs)-------dict_items([(10, 'Python'), (20, 'Java'), (30, 'C++'), (40, 'C')])
+>>> for kv in kvs:
+...     print(kv)
+...
+		(10, 'Python')
+		(20, 'Java')
+		(30, 'C++')
+		(40, 'C')
+>>> for kv in d1.items():
+...     print(kv)
+...
+		(10, 'Python')
+		(20, 'Java')
+		(30, 'C++')
+		(40, 'C')
+>>> for k,v in d1.items():
+...     print(k,"--->",v)
+...
+		10 ---> Python
+		20 ---> Java
+		30 ---> C++
+		40 ---> C
+----------------------------------------------------------------------------------------------------------------------------------
+9. update()
+----------------------------------------------------------------------------------------------------------------------------------
+Syntax:    dictobj1.update(dictobj2)
+
+=>This Function isd used for Joining / Updating  / Modifying the dictobj1 content with DictObj2 content.
+------------------
+Exmaples:
+------------------
+>>> d1={10:1.2,20:3.4,30:4.5}
+>>> d2={100:"Apple",200:"Kiwi"}
+>>> print(d1,type(d1))------------{10: 1.2, 20: 3.4, 30: 4.5} <class 'dict'>
+>>> print(d2,type(d2))--------------{100: 'Apple', 200: 'Kiwi'} <class 'dict'>
+>>> d1.update(d2)
+>>> print(d1,type(d1))---------{10: 1.2, 20: 3.4, 30: 4.5, 100: 'Apple', 200: 'Kiwi'} <class 'dict'>
+>>> print(d2,type(d2))------------{100: 'Apple', 200: 'Kiwi'} <class 'dict'>
+---------------------------------------------------
+>>> d1={10:1.2,20:3.4,30:4.5}
+>>> d2={100:"Apple",20:13.4}
+>>> print(d1,type(d1))-----------{10: 1.2, 20: 3.4, 30: 4.5} <class 'dict'>
+>>> print(d2,type(d2))-----------{100: 'Apple', 20: 13.4} <class 'dict'>
+>>> d1.update(d2)
+>>> print(d1,type(d1))--------{10: 1.2, 20: 13.4, 30: 4.5, 100: 'Apple'} <class 'dict'>
+>>> print(d2,type(d2))--------{100: 'Apple', 20: 13.4} <class 'dict'>
+-------------------------------------------
+>>> d1={10:1.2,20:3.4,30:4.5}
+>>> d2={10:11.2,20:13.4,30:14.5}
+>>> print(d1,type(d1))-----------{10: 1.2, 20: 3.4, 30: 4.5} <class 'dict'>
+>>> print(d2,type(d2))-----------{10: 11.2, 20: 13.4, 30: 14.5} <class 'dict'>
+>>> d1.update(d2)
+>>> print(d1,type(d1))------------{10: 11.2, 20: 13.4, 30: 14.5} <class 'dict'>
+>>> print(d2,type(d2))------------{10: 11.2, 20: 13.4, 30: 14.5} <class 'dict'>
+==========================x====================================================
+Most Imp Points
+-----------------------------------------------
+=>Dict in Dict--->Possible to write
+----------------------------------------------
+>>> d1={"sno":10,"sname":"Rossum","imarks":{"cm":17,"cppm":16,"pym":18},"emarks":{"cm":67,"cppm":78,"pym":70},"cname":"OUCET"}
+>>> print(d1,type(d1))
+					{'sno': 10, 'sname': 'Rossum', 'imarks': {'cm': 17, 'cppm': 16, 'pym': 18}, 'emarks': {'cm': 67, 'cppm': 78, 'pym': 70}, 'cname': 'OUCET'} <class 'dict'>
+>>> for k in d1.keys():
+...     print(k)
+...
+			sno
+			sname
+			imarks
+			emarks
+			cname
+>>> for v in d1.values():
+...     print(v)
+...
+			10
+			Rossum
+			{'cm': 17, 'cppm': 16, 'pym': 18}
+			{'cm': 67, 'cppm': 78, 'pym': 70}
+			OUCET
+>>> for v in d1.values():
+...     print(v,type(v))
+...
+			10 <class 'int'>
+			Rossum <class 'str'>
+			{'cm': 17, 'cppm': 16, 'pym': 18} <class 'dict'>
+			{'cm': 67, 'cppm': 78, 'pym': 70} <class 'dict'>
+			OUCET <class 'str'>
+>>> for kv in d1.items():
+...     print(kv)
+...
+			('sno', 10)
+			('sname', 'Rossum')
+			('imarks', {'cm': 17, 'cppm': 16, 'pym': 18})
+			('emarks', {'cm': 67, 'cppm': 78, 'pym': 70})
+			('cname', 'OUCET')
+>>> for k in d1.keys():
+...     print(k)
+...
+			sno
+			sname
+			imarks
+			emarks
+			cname
+>>> for k in d1.keys():
+...     print(k,"--->",d1.get(k))
+...
+		sno ---> 10
+		sname ---> Rossum
+		imarks ---> {'cm': 17, 'cppm': 16, 'pym': 18}
+		emarks ---> {'cm': 67, 'cppm': 78, 'pym': 70}
+		cname ---> OUCET
+>>> for v in d1.get("imarks"):
+...     print(v)
+...
+			cm
+			cppm
+			pym
+>>> for v in d1.get("imarks"):
+...     print(v,"-->",d1.get("imarks").get(v))
+...
+				cm --> 17
+				cppm --> 16
+				pym --> 18
+>>> for v in d1.get("imarks"):
+...     print(v,"-->",d1["imarks"][v])
+...
+			cm --> 17
+			cppm --> 16
+			pym --> 18
+=========================================================================
+In side of dict, we define list,tuple and set also
+----------------
+Examples:
+---------------
+>>> d1={"sno":10,"sname":"Rossum","imarks":[16,18,17],"emarks":(60,77,67),"crs":{"B.Tech(cse)", "M.Tech(AI)"}, "cname":"OUECT"}
+>>> for k,v in d1.items():
+...     print(k,"-->",v,"--->",type(v))
+...
+			sno --> 10 ---> <class 'int'>
+			sname --> Rossum ---> <class 'str'>
+			imarks --> [16, 18, 17] ---> <class 'list'>
+			emarks --> (60, 77, 67) ---> <class 'tuple'>
+			crs --> {'B.Tech(cse)', 'M.Tech(AI)'} ---> <class 'set'>
+			cname --> OUECT ---> <class 'str'>
+=========================================================================
+dict in list is Possible
+----------------------------------
+Examples
+-----------------
+>>> l1=[10,"Rossum",{"cm":16,"cppm":17,"pym":18},"OUCET"]
+>>> print(l1,type(l1))---[10, 'Rossum', {'cm': 16, 'cppm': 17, 'pym': 18}, 'OUCET'] <class 'list'>
+>>> for val in l1:
+...     print(val,type(val))
+...
+		10 <class 'int'>
+		Rossum <class 'str'>
+		{'cm': 16, 'cppm': 17, 'pym': 18} <class 'dict'>
+		OUCET <class 'str'>
+>>> for k,v in l1[2].items():
+...     print(k,"--->",v)
+...
+		cm ---> 16
+		cppm ---> 17
+		pym ---> 18
+------------------------------------------------------------------
+dict in tuple is Possible
+------------------------------------------------------------------
+Examples:
+---------------------------------------------
+>>> t1=(10,"Rossum",{"cm":16,"cppm":17,"pym":18},"OUCET")
+>>> print(t1,type(t1))----------(10, 'Rossum', {'cm': 16, 'cppm': 17, 'pym': 18}, 'OUCET') <class 'tuple'>
+>>> for val in t1:
+...     print(val,type(val))
+...
+		10 <class 'int'>
+		Rossum <class 'str'>
+		{'cm': 16, 'cppm': 17, 'pym': 18} <class 'dict'>
+		OUCET <class 'str'>
+>>> for k,v in t1[-2].items():
+...     print(k,"-->",v)
+...
+		cm --> 16
+		cppm --> 17
+		pym --> 18
+--------------------------------------------------------------------------------------
+dict in set not possible
+--------------------------------------------------------------------------------------
+>>> s1={10,"Rossum",{"cm":16,"cppm":17,"pym":18},"OUCET"}--TypeError: unhashable type: 'dict'
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------

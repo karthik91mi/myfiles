@@ -1,0 +1,58 @@
+			============================================
+					File in Python--4 days
+			============================================
+Index
+------------
+=>Purpose of Files
+=>Types of Applications in Files
+		a) Non-Persistant Applications
+		b) Persistant Applications
+=>Definition of File and Streams
+=>Operations on Files
+		a) Write Operations
+		b) Read Operations
+=>Types of Files
+		a) Text Files
+		b) Binary  Files
+=>File Opening Modes
+		1) r   
+		2) w
+		3) a
+		4) r+
+		5) w+
+		6) a+
+		7) x
+		8) x+
+=>Number of approaches to Open a File
+		a) By using open()
+		b) By Using " with open() as "
+=>Programming Examples
+=>Writing the data to the Files
+			a) write()
+			b) writelines()
+=>Programming Examples
+=>Reading  the data from the Files
+		(a) read()
+		(b) readlines()	
+=>Programming Examples
+-------------------------------------------------------------------------------------------------------------------
+=>Pickling ( Object Serialization ) and  Un-Pickling (Object De-Serialization ) Concept 
+=>pickle module
+=>Implementation of Pickling and Un-pickling Operations
+=>Programming Examples
+=>Random Access Files
+		a) tell()
+		b) seek()
+-----------------------------------------------------------------------------------------------------------------
+=>Working CSV Files
+=>csv module
+=>Operations on csv files
+		a) csv.reader
+		b) csv.writer
+		c) csv.DictReader
+		d) csv.DictWriter()
+-------------------------------------------------------------------------------------------------------------------
+=>Working OS Based Operations---Files and Folders (Directories)
+=>os module
+=>Implemenation of OS Based Operations
+---------------------------------------------------`------------------------------------------------------------------

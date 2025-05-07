@@ -1,0 +1,88 @@
+			==============================================
+					1. list
+			==============================================
+Index:
+------------------------------------------------------------------------
+=>Properties of list
+=>Types of list
+	a) emty list
+	b) non-empty list
+=>Operations on list
+=>Pre-defined functions in list
+=>Nested List / Inner List
+=>Programming Examples
+================================================================================
+Properties of list
+-------------------------------------------------------------------------------------------------------------------------------------------
+=>'list' is one of the pre-defined class and treated as list data type
+=>The purpose of list data type is that " To store Multiple Values either of same Type OR Different Type 
+    OR Both the Types in Single Object with Unique and Duplicate Values".
+=>The Values / Elements of list must be stored / Organized with Square Brackets [ ] and Values must be 
+    separted  by comma.
+=>An object of list maintains Insertion order.
+=>On object of list, we can perform Both Indexing and Slicing Operations.
+=>An object of list belongs to Mutable
+=>W.r.t list class, we can create 2 types of list objects. They are
+		a) Empty List
+		b) Non-Empty List
+--------------------------
+a) Empty List:
+--------------------------
+=>An empty list is one, which does not contain any Elements and whose length is 0.
+=>Syntax:   varname=[]
+			(OR)
+		   varname=list()
+--------------------------
+b) Non-Empty List:
+--------------------------
+=>An Non-Empty list is one, which  contains Elements and whose length is >0.
+=>Syntax:   varname=[Val1,Val2.....Val-n]
+			(OR)
+		   varname=list(object)
+----------------------------------------------------------------------------------------------------------------------------------
+Examples:
+----------------------------------------------------------------------------------------------------------------------------------
+>>> l1=[10,20,30,10,40,50,20,10]
+>>> print(l1,type(l1))----------------[10, 20, 30, 10, 40, 50, 20, 10] <class 'list'>
+>>> l2=[20,"Rossum",34.56,True,2+3j]
+>>> print(l2,type(l2))---------------------[20, 'Rossum', 34.56, True, (2+3j)] <class 'list'>
+>>> l2[0]----------------20
+>>> l2[-1]-------------(2+3j)
+>>> l2[1:4]-----------['Rossum', 34.56, True]
+>>> l2[::2]--------------[20, 34.56, (2+3j)]
+>>> l2[::-1]-----------[(2+3j), True, 34.56, 'Rossum', 20]
+---------------------------
+>>> l2=[20,"Rossum",34.56,True,2+3j]
+>>> print(l2,type(l2),id(l2))--------[20, 'Rossum', 34.56, True, (2+3j)] <class 'list'> 2705927635008
+>>> l2[0]=30
+>>> print(l2,type(l2),id(l2))----[30, 'Rossum', 34.56, True, (2+3j)] <class 'list'> 2705927635008
+>>> l2[2:4]=[44.55,False]
+>>> print(l2,type(l2),id(l2))----[30, 'Rossum', 44.55, False, (2+3j)] <class 'list'> 2705927635008
+---------------------------------------
+>>> l1=[10,"Rossum",34.56]
+>>> print(l1,type(l1),len(l1))----------------[10, 'Rossum', 34.56] <class 'list'>     3
+>>> l2=[]
+>>> print(l2,type(l2),len(l2))---------------  [] <class 'list' >   0
+	OR
+>>> l3=list()
+>>> print(l3,type(l3),len(l3))--------------   [] <class 'list'> 0
+-------------------------------------
+>>> l1=[10,20,30,40,50,60]
+>>> print(l1,type(l1))-------------------------[10, 20, 30, 40, 50, 60] <class 'list'>
+>>> b=bytes(l1)
+>>> print(b,type(b))-------------------------b'\n\x14\x1e(2<' <class 'bytes'>
+>>> l2=list(b)
+>>> print(l2,type(l2))---------------------[10, 20, 30, 40, 50, 60] <class 'list'>
+>>> s="MISSISSIPPI"
+>>> l3=list(s)
+>>> print(l3,type(l3))-----['M', 'I', 'S', 'S', 'I', 'S', 'S', 'I', 'P', 'P', 'I'] <class 'list'>
+------------------------
+>>> a=[10]
+>>> print(a,type(a))------------------[10] <class 'list'>
+>>> x=100
+>>> b=list(x)------------------TypeError: 'int' object is not iterable
+	To solve the above Error, Use the following
+>>> b=list([x])
+>>> print(b,type(b))--------------------[100] <class 'list'>
+>>> b=list(x,)------------TypeError: 'int' object is not iterable
+----------------------------------------------------------------------------------------------------------------------------------

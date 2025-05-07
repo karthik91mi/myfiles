@@ -1,0 +1,40 @@
+		==========================================================
+				2. float
+		==========================================================
+Properties
+--------------------------
+=>'float' is  one of the pre-defined class name and treated as Fundamental data Type.
+=>The purpose of float data type is that "To store Real Constant values OR Float  OR  Double Pointing 
+   (Number with Decimal Places)". 
+=>float data type never allows us to represent / Store Binary,Octal and Hexa Decimal Values
+=>float data type allows us to store Scientific Notation data. The Advantage of Scientific is that To take Less Memory space for bigger floating point Values.
+--------------------
+Examples:
+--------------------
+>>> a=12.34
+>>> print(a,type(a))-----------------------------------12.34 <class 'float'>
+>>> b=0.9
+>>> print(b,type(b))----------------------------------0.9 <class 'float'>
+------------------------------
+>>> a=10
+>>> b=1.2
+>>> c=a+b
+>>> print(a,type(a))---------------------------------10 <class 'int'>
+>>> print(b,type(b))--------------------------------1.2 <class 'float'>
+>>> print(c,type(c))--------------------------------11.2 <class 'float'>
+--------------------------------------------------------------------------------------------------------
+>>> a=0b1010.0b1111------------SyntaxError: invalid decimal literal
+>>> a=0o13.0o23----------------SyntaxError: invalid decimal literal
+>>> a=0xAC.0XBEE------------SyntaxError: invalid decimal literal
+>>> a=0b1010.0xAC------------SyntaxError: invalid decimal literal
+>>> a=0o12.0b1010------------SyntaxError: invalid decimal literal
+--------------------------------------------------------------------------------------------------------
+>>> a=3e2
+>>> print(a,type(a))--------------------300.0 <class 'float'>
+----------------------------------
+>>> a=4e-2
+>>> print(a,type(a))---------------0.04 <class 'float'>
+-----------------------------------------------------------
+>>> a=0.00000000000000000000000000000000000000000000006
+>>> print(a,type(a))---------6e-47 <class 'float'>
+---------------------------------------------------------------------------------------------------------------------

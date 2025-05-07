@@ -1,0 +1,35 @@
+		======================================================
+				Types of languages
+		======================================================
+=>In the content of Functions, we have Two Types of programming Languages. They are
+
+		a) Un-Structured Programming Lang
+		b) Structured Programming Lang
+---------------------------------------------------------------------------------------------------------------------------------------
+a) Un-Structured Programming Lang
+---------------------------------------------------------------------------------------------------------------------------------------
+=>In Un-Structured Programming Lang, We don't have the concept of FUNCTIONS.
+=>Since Un-Structured Programming Lang does not contains the concept of FUNCTIONS and Hence 
+    whose Applications having the following  Limitations.
+
+	1. Application development Time is More
+	2. Application takes More memory Space
+	3. Application execution time is More
+	4. Application Performance Degraded
+	5. Redundency ( Duplication or Replication) of the Code is More.
+
+Examples:  GW-BASIC
+---------------------------------------------------------------------------------------------------------------------------------------
+b) Structured Programming Lang
+---------------------------------------------------------------------------------------------------------------------------------------
+=>In Structured Programming Lang, We have the concept of FUNCTIONS.
+=>Since Structured Programming Lang  contains the concept of FUNCTIONS and Hence 
+    whose Applications having the following  Advantages.
+	1. Application development Time is Less
+	2. Application takes Less memory Space
+	3. Application execution time is Less
+	4. Application Performance Enahnced (Improved)
+	5. Redundency ( Duplication or Replication) of the Code is Minimized.
+
+Examples:     C,C++,Java,PYTHON,C#.net...etc
+---------------------------------------------------------------------------------------------------------------------------------------

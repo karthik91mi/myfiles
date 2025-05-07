@@ -1,0 +1,114 @@
+			=======================================
+			        Various forms of except blocks
+			=======================================
+=>we can use except block in Various Forms.
+----------------------------------------------------------------------------------------------------------
+Form-1: With this form, we can handle one exception at a time.
+----------------------------------------------------------------------------------------------------------
+		try:
+		    ---------------------------
+		    ---------------------------
+		except exception-class-name-1:
+		      ------------------------------------
+		      ------------------------------------
+		except exception-class-name-2:
+		      ------------------------------------
+		      ------------------------------------
+		------------------------------------------------
+		except exception-class-name-n:
+		      ------------------------------------
+		      ------------------------------------
+-----------------------------------------------------------------------------------------------------------
+Form-2: With this form we can handle multiple specific exceptions with a single except block
+	      This type of facility is called Multi Exception handling block.	
+----------------------------------------------------------------------------------------------------------
+		try:
+		    ------------------------------------
+		    ------------------------------------
+		except ( exception-class-1,exception-class-2...exception-class-n ):
+		      ---------------------------------------------------
+		      Block of statments provides 
+		      User-Friendly error messages
+		      for Multiple Specific Exceptions
+		      ---------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------
+Form-3: With this form, we can handle one exception at a time with ALIAS NAME for capuring Technical 
+             error messages occuring due exception occurence.
+---------------------------------------------------------------------------------------------------------------------
+		try:
+		    ---------------------------
+		    ---------------------------
+		except exception-class-name-1 as alias name:
+		      ------------------------------------
+		      print(alias name)
+		      ------------------------------------
+		except exception-class-name-2 as alias name:
+		      ------------------------------------
+			print(alias name)
+		      ------------------------------------
+		------------------------------------------------
+		except exception-class-name-n as alias name:
+		      ------------------------------------
+		      print(alias name)
+		      ------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+Form-4:  default except block--matches with all types of exceptions
+---------------------------------------------------------------------------------------------------------------------
+		try:
+		    ---------------------------
+		    ---------------------------
+		except :
+		      ------------------------------------
+		      print("OOOPs Some thing went wrong")
+		      ------------------------------------
+=>Industry is not recommended to write single default except block bcoz it is giving common messages for all types of exceptions.
+=>Hence Industry is highly recommended to write default except block at end of all types of specific except blocks.
+
+Final Syntax:
+--------------------------
+		try:
+		    ---------------------------
+		    ---------------------------
+		except exception-class-name-1:
+		      ------------------------------------
+		      ------------------------------------
+		except exception-class-name-2:
+		      ------------------------------------
+		      ------------------------------------
+		------------------------------------------------
+		except exception-class-name-n:
+		      ------------------------------------
+		      ------------------------------------
+		except: # default except block
+			------------------------------
+			------------------------------
+		else:
+		     -----------------
+		     -----------------
+		finally:
+		      ---------------
+		      ---------------
+				
+				(OR)
+
+		try:
+		    ---------------------------
+		    ---------------------------
+		except ( exception-class-1,exception-class-2...exception-class-n ):
+		      ---------------------------------------------------
+		      Block of statments provides 
+		      User-Friendly error messages
+		      for Multiple Specific Exceptions
+		      ---------------------------------------------------
+		except: # default except block
+			------------------------------
+			------------------------------
+		else:
+		     -----------------
+		     -----------------
+		finally:
+		      ---------------
+		      ---------------
+
+==================================x===================================
